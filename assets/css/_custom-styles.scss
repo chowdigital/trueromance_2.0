@@ -45,7 +45,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: $green-base;
+    background-color: $blue-base;
     color: $blue-base;
     //background: url('http://localhost:8888/BlackBook/wp-content/uploads/2020/08/copper.png') no-repeat 50% fixed / cover;
 }
@@ -67,7 +67,7 @@ a {
     font-weight: 500;
 }
 a:focus, a:hover {
-    color: $green-base;
+    color: $blue-base;
 
 }
 
@@ -94,7 +94,7 @@ a:focus .underline-heading, a:hover  .underline-heading {
 
 
 .navbar {
-background: $green-base;
+background: $pink-base;
 }
     @include media-breakpoint-up(md) {
         .navbar {
@@ -103,7 +103,7 @@ background: $green-base;
     }
 
     .top-nav-collapse {
-        background: $green-base!important;
+        background: $pink-base!important;
     }
 //navbar logo
 
@@ -112,12 +112,11 @@ background: $green-base;
     font-weight: 400;
     font-style: normal;
     color: $white-base;
-
-
+    img{width: 300px;}
 }
 
-.navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
-    color:$green-base;
+.navbar.navbar-light .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color:$blue-darken-1;
 }
       
 
@@ -170,7 +169,7 @@ footer {
 
 .sign-up{
     font-size: 2em;
-    color: $green-base;
+    color: $blue-base;
 }
 @include media-breakpoint-up(sm) {
     .sign-up{
@@ -213,8 +212,8 @@ footer {
     border: 2px solid $white-base;
 }
 .book-btn:hover {
-    border: 2px solid $green-base;
-    color: $green-base;
+    border: 2px solid $blue-base;
+    color: $blue-base;
 }
 
 .btn-white{
@@ -226,11 +225,11 @@ footer {
     border: 1px solid $blue-base;
 }
 .btn-white:hover{
-    border: 1px solid $green-base;
-    color: $green-base !important;  
+    border: 1px solid $blue-base;
+    color: $blue-base !important;  
 }
 .btn-green:hover{
-    border-color: $green-base;
+    border-color: $blue-base;
 }
 
 

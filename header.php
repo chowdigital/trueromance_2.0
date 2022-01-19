@@ -16,15 +16,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6YQ1L8D7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J6YQ1L8D7L');
-</script>
 
 	<?php wp_head(); ?>
 </head>
@@ -38,11 +29,15 @@
               
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" role="navigation">
   <div class="container">
+   
+
+   
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-St John's Tavern
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/wide300.png" alt="Gastronome Logo" style>
 
 		</a>
+  
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -62,13 +57,13 @@ St John's Tavern
             'walker'            => new WP_Bootstrap_Navwalker(),
         ) );
 		?>
-		
+
 		
     </div>
 </nav>
 		
 
-		<!--Navbar-->
+		<!---Navbar-->
 
 
 	</header><!-- #masthead -->
