@@ -1,0 +1,407 @@
+// ===========================================================================
+// My Custom Styles
+// ===========================================================================
+//
+// Table of Contents:
+//
+//  1. Header Settings
+//   - 1a. Typography
+//  2. Navigation
+//  3. Footer
+//  4. Content Boxes
+//  5. Buttons
+//  6. Video Background 
+//  7. Single Page
+//  8. Blog Roll
+//  9. Text Box
+//  10. Pagenation
+
+
+// 1. Header Settings
+// ===========================================================================
+
+
+
+
+// Settings for full height background
+html,
+body,
+#page,
+.view {
+    width: 100%; 
+  height:100%; 
+
+}
+ 
+  // Settings for navbar in edit mode
+body.logged-in {
+    
+    nav {
+        margin-top: 32px;
+    }
+}
+body {
+  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $green-base;
+    color: $blue-base;
+    //background: url('http://localhost:8888/BlackBook/wp-content/uploads/2020/08/copper.png') no-repeat 50% fixed / cover;
+}
+
+
+// extra padding
+.pt-6 {
+    margin-top: 7rem;
+}
+.pb-6 {
+    margin-bottom: 7rem;
+}
+
+// 1a. Typography
+// ===========================================================================
+a {
+    color: $blue-base;
+    text-decoration: none !important;
+    font-weight: 500;
+}
+a:focus, a:hover {
+    color: $green-base;
+
+}
+
+
+
+.underline-heading{
+    border-bottom: 2px solid $blue-base;
+    display: inline-block;
+    margin-bottom: .5em;
+}
+a:focus .underline-heading, a:hover  .underline-heading {
+    border-bottom: 2px solid $blue-base;
+
+}
+
+
+
+
+// 2. Navigation
+// ===========================================================================
+
+// change Navbar color on scroll 
+
+
+
+.navbar {
+background: $green-base;
+}
+    @include media-breakpoint-up(md) {
+        .navbar {
+            background: rgba(0, 0, 0, 0.5);
+            }
+    }
+
+    .top-nav-collapse {
+        background: $green-base!important;
+    }
+//navbar logo
+
+.navbar-brand{
+    font-family: manofa-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $white-base;
+
+
+}
+
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+    color:$green-base;
+}
+      
+
+.nav-item{
+    margin: 1.5em 2em;
+}
+@include media-breakpoint-up(lg) {
+    .nav-item{
+        margin: 0em 2em;
+    }
+  }
+//remove at bottom of footer
+.page{
+    margin: 0;
+    padding-top:0px;
+}
+.navbar-toggler {
+    background-color: transparent !important;
+}
+
+
+
+
+
+
+// 3. Footer
+// ===========================================================================
+
+
+
+footer {
+    background-color: #242424;
+    margin-top: 4rem;
+    .container {
+        padding-top:100px
+    }
+    .md-form label {
+        color: $white;
+    }
+}
+
+
+.no-line-break{
+    margin-bottom: 0rem;
+}
+
+.post-header{
+    margin-top: 8rem;
+}
+
+.sign-up{
+    font-size: 2em;
+    color: $green-base;
+}
+@include media-breakpoint-up(sm) {
+    .sign-up{
+        font-size: 3em;
+    }
+}
+@include media-breakpoint-up(lg) {
+    footer .container{
+        padding-top:150px
+    }
+    .sign-up{
+        font-size: 4em;
+    }
+}
+
+
+// fix spacing issue text on footer
+.fc-wide{
+    padding-left: calc(var(--bs-gutter-x) / 2);
+}
+// footer
+// 4. Content Boxes
+// ===========================================================================
+.openbook-image-box {
+    min-height: 400px;
+}
+.openbook-content-box{
+    background-color: $white-base;
+    padding: 3rem;
+}
+
+
+
+// 5. Buttons
+// ===========================================================================
+
+
+// Hightlight Book BTN
+.book-btn {
+    border: 2px solid $white-base;
+}
+.book-btn:hover {
+    border: 2px solid $green-base;
+    color: $green-base;
+}
+
+.btn-white{
+    font-size:1em;
+    margin: 0;
+    padding: 0.5em 2em;
+    border-radius: 0;
+    color: $blue-base;
+    border: 1px solid $blue-base;
+}
+.btn-white:hover{
+    border: 1px solid $green-base;
+    color: $green-base !important;  
+}
+.btn-green:hover{
+    border-color: $green-base;
+}
+
+
+
+
+.entry-footer{display: none;}
+
+// End Hide Entry Footer
+
+ 
+
+// 6. Video Background 
+// ===========================================================================
+
+.vimeo-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+    overflow: hidden;
+ }
+ .vimeo-wrapper iframe {
+    width: 100vw;
+    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ .full-page-intro{
+     z-index:1;
+ }
+ .index3{
+    z-index:3;
+ }
+
+
+
+
+// 7. Single Post
+// ===========================================================================
+
+.page-img-header{
+    height: 500px;
+    height: 60vh;
+ 
+}
+.overlap-cover{
+    margin-top: -30vh;
+}
+.single-post-main{
+    margin-top: -100px;
+    margin-top: -30vh;;
+}
+
+
+.single-post {
+    height: 150px;
+}
+
+.post-thumb {
+    height: 400px;
+    width: 400px;
+    margin-right:auto;
+    margin-left:auto;
+    position: relative;
+    z-index:3;
+}
+
+@include media-breakpoint-up(lg) {
+    .post-thumb  {
+        margin-right:5em;
+   
+    }
+}
+.default-content-box {
+    background-color: $white-base;
+    padding: 5em;
+
+
+}
+.overlap-post {
+    position: relative;
+    z-index: 1;
+    margin-top: -200px;
+    padding-top: 250px;
+}
+
+
+
+// 8. Blog Roll
+// ===========================================================================
+.square-img {
+    padding-bottom: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+// Set size for thumbnail images
+.thumb-wrapper{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+   
+    img {
+        object-fit: cover;
+    }
+
+}
+.blog-content-box{
+    background-color: $white-base;
+  
+}
+.blog-post-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.blog-post-list{
+    flex-basis: 100%;
+}
+
+
+@include media-breakpoint-up(lg) {
+ 
+    .blog-post-list{
+        flex-basis: 30%;
+    }
+}
+
+// 9. Text Box
+// ===========================================================================
+
+    .text-box h4::before, .text-box .h4::before {
+        content: "";
+        display: inline-block;
+        border: 1px solid $white-base;
+        width: 1em;
+        margin: .3em .5em .3em 0;
+    }
+    .text-box h4 {
+        color: $white-base;
+        font-family: playfair-display,serif;
+        font-weight: 400;
+        font-style: italic;
+
+    }
+    .text-box h3, .text-box .h3 {
+        font-size: 2.5em;
+        margin: 0 .3em;
+        font-family: playfair-display,serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+  
+// 10. Pagenation
+// ===========================================================================
+.pagenav{
+width:100%
+}
+.alignleft a, .alignright a {
+    color: $green-base;
+   
+}
+.alignleft a:focus, .alignleft a:hover, .alignright a:focus, .alignright a:hover {
+    color: $blue-base;
+}
