@@ -34,7 +34,7 @@
    
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/wide300.png" alt="Gastronome Logo" style>
+  <img id="navbar-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/wide300.png" alt="Gastronome Logo" style>
 
 		</a>
   

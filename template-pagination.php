@@ -52,7 +52,7 @@ if ( $query->have_posts() ) :
                             </div>
                             <h3 class="font-weight-bold"> <?php the_title(); ?> </h3>
                             <div class="" >  <?php the_excerpt(); ?>  </div>
-                            <a href="<?php echo get_permalink() ?>"><button type="button" class="btn btn-white waves-effect waves-light">Read more</button></a>
+                            <a href="<?php echo get_permalink() ?>"><button type="button" class="btn btn-primary waves-effect waves-light">Read more</button></a>
                     </div>
 <?php endwhile;?>
 </div>

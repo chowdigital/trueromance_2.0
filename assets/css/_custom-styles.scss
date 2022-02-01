@@ -15,6 +15,7 @@
 //  8. Blog Roll
 //  9. Text Box
 //  10. Pagenation
+//  11. Instagram
 
 
 // 1. Header Settings
@@ -46,7 +47,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: $blue-base;
-    color: $blue-base;
+    color: $black-base;
     //background: url('http://localhost:8888/BlackBook/wp-content/uploads/2020/08/copper.png') no-repeat 50% fixed / cover;
 }
 
@@ -67,19 +68,19 @@ a {
     font-weight: 500;
 }
 a:focus, a:hover {
-    color: $blue-base;
+    color: $pink-base;
 
 }
 
 
 
 .underline-heading{
-    border-bottom: 2px solid $blue-base;
+    border-bottom: 2px solid $black-base;
     display: inline-block;
     margin-bottom: .5em;
 }
 a:focus .underline-heading, a:hover  .underline-heading {
-    border-bottom: 2px solid $blue-base;
+    border-bottom: 2px solid $black-base;
 
 }
 
@@ -96,9 +97,10 @@ a:focus .underline-heading, a:hover  .underline-heading {
 .navbar {
 background: $pink-base;
 }
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         .navbar {
-            background: rgba(0, 0, 0, 0.5);
+            background: transparent;
+          
             }
     }
 
@@ -112,7 +114,7 @@ background: $pink-base;
     font-weight: 400;
     font-style: normal;
     color: $white-base;
-    img{width: 300px;}
+  
 }
 
 .navbar.navbar-light .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
@@ -128,6 +130,32 @@ background: $pink-base;
         margin: 0em 2em;
     }
   }
+
+
+#navbar-logo{
+    width: 300px;
+    transition: width 1s, height 1s, transform 1s;
+
+}
+
+.top-nav-collapse .container #navbar-logo{
+    width: 150px;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+
+.navbar-brand img{
+    width: 150px;
+    max-height: auto;
+
+}
+.full-logo {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+      
 //remove at bottom of footer
 .page{
     margin: 0;
@@ -136,6 +164,16 @@ background: $pink-base;
 .navbar-toggler {
     background-color: transparent !important;
 }
+.entry-title {
+    margin: 1em 0em;
+}
+
+//Resize Navbar buttons
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
 
 
 
@@ -168,21 +206,15 @@ footer {
 }
 
 .sign-up{
-    font-size: 2em;
+   
     color: $blue-base;
 }
-@include media-breakpoint-up(sm) {
-    .sign-up{
-        font-size: 3em;
-    }
-}
+
 @include media-breakpoint-up(lg) {
     footer .container{
         padding-top:150px
     }
-    .sign-up{
-        font-size: 4em;
-    }
+
 }
 
 
@@ -216,7 +248,7 @@ footer {
     color: $blue-base;
 }
 
-.btn-white{
+.btn-primary{
     font-size:1em;
     margin: 0;
     padding: 0.5em 2em;
@@ -224,11 +256,11 @@ footer {
     color: $blue-base;
     border: 1px solid $blue-base;
 }
-.btn-white:hover{
+.btn-primary:hover{
     border: 1px solid $blue-base;
     color: $blue-base !important;  
 }
-.btn-green:hover{
+.btn-secondary:hover{
     border-color: $blue-base;
 }
 
@@ -403,4 +435,17 @@ width:100%
 }
 .alignleft a:focus, .alignleft a:hover, .alignright a:focus, .alignright a:hover {
     color: $blue-base;
+}
+
+// 11. Instagram 
+// ===========================================================================
+
+.sbi_header_text{
+    color: $black-base !important;
+}
+.sbi_follow_btn{
+    a{ 
+        background-color: $pink-base !important;
+    }
+
 }

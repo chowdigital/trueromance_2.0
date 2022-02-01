@@ -11,11 +11,8 @@
 
 ?>
 
-<div class="container">
-  <div class="text-box col-6 offset-3 col-md-4 offset-md-4 col-lg-2 offset-lg-5">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-1.svg" alt="St John's Tavern Logo">
-  </div>
-</div>
+
+
 
 <!-- Footer -->
 <footer class="page-footer font-small dark-background">
@@ -42,8 +39,7 @@
 
     <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">
-
-<form action="https://oldbrompton.us1.list-manage.com/subscribe/post?u=966763b854f33413a4b5eab02&amp;id=0aa6dadf73" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="https://pizza.us20.list-manage.com/subscribe/post?u=b0f4feccf049b7562744ecb54&amp;id=d949c7aa16" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
       <div class="row">
             <div class="md-form mb-0">
@@ -123,14 +119,14 @@
       <!-- Grid column -->
       <div class="col-sm-6 col-lg-2 offset-lg-1">
 
-        <!-- Links -->
+        <!-- Links 
         <h2 class="h3-responsive font-weight-bold my-4">Opening Times</h2>
-    <!--Section description-->
+    <!--Section description
 
               <p class="no-line-break"><strong>Monday - Sunday </strong></p>
               <p >12pm 'til late</p>
               
-            
+-->
       </div>
       <!-- Grid column -->
 
@@ -138,7 +134,7 @@
       <div class="col-sm-6 col-lg-3">
 
         <!-- Links -->
-        <h2 class="h3-responsive font-weight-bold my-4">St John's Tavern</h2>
+        <h2 class="h3-responsive font-weight-bold my-4">True Romance</h2>
     <!--Section description-->
    
   
@@ -149,29 +145,30 @@
    
         <ul class="list-unstyled">
           <li>
-          <p><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;147 St.  John’s Hill,<br>Clapham SW11 1TQ</p>
+          <p><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Arch 11  <br>Water Lane<br>Camden NW18JZ </p>
+          
         
           </li>
           <li>
           </li>
-          <li>
+        <!--  <li>
           <a href="tel:+4402074506457"><p><i class="fas fa-phone mt-4"></i>&nbsp;&nbsp;020 7450 6457</a></p>
-          </li>
+          </li>-->
           <li>
-          <a href="mailto:info@stjohnstavern.co.uk"><p><i class="fas fa-envelope mt-4"></i>&nbsp;&nbsp;info@stjohnstavern.co.uk</a></p>
+          <a href="mailto:camden@trueromance.pizza"><p><i class="fas fa-envelope fa-lg mt-3"></i>&nbsp;&nbsp;camden@trueromance.pizza</a></p>
           </li>
-          <li>
-          <a href="careers"><i class="fa fa-rocket mt-4" aria-hidden="true"></i>&nbsp;&nbsp;Careers</a> 
-          </li>
-          <li>
-          <a href="privacy-policy"><i class="fa fa-lock mt-4" aria-hidden="true"></i>&nbsp;&nbsp;Privacy Policy</a>
-          </li>
+       
           <li>  
       <!--    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x mt-4"></i> &nbsp;&nbsp;</a>
           <a href="https://twitter.com/"><i class="fab fa-twitter fa-2x mt-4"></i> &nbsp;&nbsp;</a> -->
-          <a href="https://www.instagram.com/old.brompton/"><i class="fab fa-instagram fa-2x mt-4"></i> &nbsp;&nbsp;</a>
+          <a href="https://www.instagram.com/trueromancelondon/"><i class="fab fa-instagram  fa-lg mt-3"></i>&nbsp;&nbsp;@trueromancelondon</a>
           </li>
-          
+          <li class="mt-5" >
+          <a href="careers"></i><small>Join the team</small></a> 
+          </li>
+          <li class="mt-1" >
+          <a href="privacy-policy"><small>Privacy Policy</small></a> 
+          </li>
         </ul>
 
       </div>
@@ -183,10 +180,12 @@
 
   </div>
   <!-- Footer Links -->
-
+  <div class="row col-6 offset-3 col-lg-4 offset-lg-4">
+      <img id="full-logo" src="http://localhost:8888/trueromance_landing/wp-content/themes/trueromance_landing/assets/img/tr_logo.png" alt="True Romance Logo">
+    </div>
  <!-- Cloudsdale -->
      <div class="mt-5 text-center py-3" style="background: #000;"> 
-    <a href="https://cloudsdale.co.uk/">   <img src="https://cloudsdale.co.uk/wp-content/themes/Cloudsdale_2.0/assets/img/cloudsdale_logo.svg" alt="Cloudsdale" style="height:20px">
+    <a href="https://cloudsdale.co.uk/">   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/cloudsdale_logo.svg" alt="Cloudsdale" style="height:20px">
   </div></a>
 
 
